@@ -421,5 +421,45 @@ body{
   margin: 0 auto;
 }
 .header{
-    background-color: #000;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 82px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+
+
+
+
+
+.intro{
+    height: 100vh;
+    background: url(../img/intro-bg.jpg) no-repeat;
+    background-size: cover;
 }
