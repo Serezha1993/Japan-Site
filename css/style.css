@@ -755,6 +755,11 @@ grid-column: span 3;
 
 .top__card-pic{
     position: relative;
+    margin-bottom: 45px;
+}
+.top__card{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -764,6 +769,7 @@ grid-column: span 3;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-end;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -778,6 +784,7 @@ grid-column: span 3;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
+    margin: 0 auto 0 0;
 
 }
 
@@ -788,6 +795,7 @@ grid-column: span 3;
     color: #fff;
     padding-right: 20px;
     background: url(../img/heart.svg) no-repeat right;
+    margin-right: 14px;
 }
 
 .top__card-comments{
@@ -796,4 +804,26 @@ grid-column: span 3;
     line-height: 24px;
     color: #fff;
     padding-right: 23px;
+    background: url(../img/svg/comment.svg) no-repeat right;
 }
+
+.top__card-desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+.top__card-more{
+    width: 118px;
+    padding: 12px 19px;
+    background: #006DFE;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: auto 0 0 0;
+
+}
+
+ .top__card-more:hover,  .top__card-more:focus,  .top__card-more:active{
+    background: #0e66da;
+
+ } 
