@@ -5,6 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japan Site</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,25 +31,39 @@
   <nav class="header__nav">
     <ul class="header__list">
       <li class="header__item">
-        <a href="#" class="header__link">Articles</a>
+        <a href="#articles" class="header__link js-scroll">Articles</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Locations</a>
+        <a href="#locations" class="header__link js-scroll">Locations</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Videos</a>
+        <a href="#videos" class="header__link js-scroll">Videos</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Sign in</a>
+        <a href="#sign-in" class="header__link js-scroll">Sign in</a>
       </li>
     </ul>
-  </nav>
-      </div>
+
+
+    <div class="header__nav-close">
+      <span class="header__nav-close-line"></span>
+      <span class="header__nav-close-line"></span>
     </div>
+
+
+  </nav>
+
+<div class="header__burger burger">
+  <span class="burger__line burger__line_first"></span>
+  <span class="burger__line burger__line_second"></span>
+  <span class="burger__line burger__line_third"></span>
+</div>
+ </div>
+  </div>
   </header>
 
   <main class="main">
-    <section class="intro">
+    <div class="intro" id="sign-in">
 <div class="wrapper">
   <h1 class="intro__title">
     Discover Amazing places in Japan
@@ -58,7 +82,7 @@
   </fieldset>
 </form>
 </div>
-    </section>
+    </div>
 
 
 
@@ -188,7 +212,9 @@
 </div>
   </div>
 </section>
-<div class="tours">
+
+
+<div class="tours" id="articles">
   <div class="wrapper-full">
     <div class="tours__tour tour">
 <div class="tour__pic">
@@ -221,7 +247,7 @@
           VIEW PREFECTURE
         </a>
       </div>
-      <div class="tour__pic">
+      <div class="tour__pic tour__pic_mob-first">
         <img src="./img/tour2.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thum">
       </div>
       </div>
@@ -233,7 +259,7 @@
 
 
 
-<section class="top">
+<section class="top" id="locations">
   <div class="wrapper-full">
     <h2 class="top__title section-title">
       Today top places to visit
@@ -381,7 +407,7 @@ Jump off balcony, onto stranger's head. Chase ball of string hide when guests co
 </section>
 
 
-<div class="videos">
+<div class="videos" id="videos">
   <div class="videos__wrapper">
     <div class="video__item"></div>
     <iframe class="video__element" src="https://www.youtube.com/embed/URDXZSJZ2ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
